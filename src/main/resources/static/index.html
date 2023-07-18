@@ -102,7 +102,7 @@
       <div class="hotel-list">
         <div class="hotel-box" v-for="(hotel,i) in hotels" :key="i"
              style="display: flex;justify-content: space-between;" @mouseover="handleMarkerFocus(hotel)">
-          <div class="ad-mark" v-if="hotel.isAD">
+          <div class="ad-mark" v-if="hotel.ad">
             <img src="./img/ad.png" width="25"/>
           </div>
           <div style="width: 0;"></div>
